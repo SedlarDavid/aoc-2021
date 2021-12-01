@@ -3,6 +3,10 @@ import 'dart:io';
 Future<void> main() async {
   final input = new File('1/input.txt');
 
+  partOne(input);
+}
+
+void partOne(File input) {
   final data = input
       .readAsLinesSync()
       .map((l) => int.tryParse(l))
